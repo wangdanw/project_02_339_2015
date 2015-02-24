@@ -1,0 +1,174 @@
+/*main*/
+nav a, nav a:visited {
+	display: inline-block;
+	color: #000000;
+	padding: 1em 1.25em;
+	font-size: 1em;
+	text-decoration: none;
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+	width: 100%;
+}
+
+
+
+nav a:hover, nav a:active, nav a:focus {
+	background-color: gray;
+	color: white;
+}
+
+
+nav a.logo {
+	background-color: white;
+	color: black;
+}
+
+#rectangle{
+	position:relative;
+	float: center;
+	
+	height:33em;
+	background-color: #222222;
+	margin: 1em;
+
+}
+
+
+#rectangle p{
+	
+
+	display: block;
+	float: right;
+	color:white;
+	margin-right: 100px;
+	margin-left: 350px;
+
+}
+
+#rectangle h2{
+
+	float: right;
+	margin-right: 400px;
+	margin-top: 200px;
+	color:white;
+
+}
+.box1{
+	
+	
+	height: 500px;
+	background-color: #333333;
+	margin: 1em;
+
+}
+
+.box2{
+	
+	
+	height: 500px;
+	background-color: #333333;
+	margin: 1em;
+
+}
+
+.box4{
+	
+	
+	height: 400px;
+	background-color: #333333;
+	margin: 1em;
+
+
+}
+
+
+
+#footer{
+	
+	position: absolute;
+	height: 80px;
+	background-color: #333333;
+	
+
+}
+
+.box4 p{
+	position: relative;
+	top: 450px;
+	
+	
+	
+
+}
+
+.box4 h2{
+	position: relative;
+	top: 410px;
+	
+	
+
+}
+
+.feature{
+	height: 600px;
+	margin:1em;
+}
+
+
+.feature h4{
+	text-align: left;
+	margin-left: 3em;
+}
+
+
+.feature ul{
+	text-align: left;
+	font-size: 0.8em;
+	margin-top: -1em;
+	margin-left: 3em;
+}
+
+
+#square{
+	float: center;
+	width: 100px;
+	height: 100px;
+	background-color: #333333;
+	margin: 2em;
+}
+
+#square h5{
+	position: relative;
+	top: 100px;
+	right:10px;
+}
+
+
+#itemsquare{
+
+	width: 50px;
+	height: 50px;
+	background-color: #333333;
+	margin: 2em;
+}
+
+.checkoutbutton{
+	float:right;
+	display: inline-block;
+  	padding: 0.5em 0.5em;
+  	color: #FFF;
+ 	background-color: #333333;
+  	text-decoration: none;
+
+}
+h6{
+	position: relative;
+}
+
+#icon{
+	float:right;
+	width: 20px;
+	height: 20px;
+	background-color: #333333;
+	margin: 2em;
+}
