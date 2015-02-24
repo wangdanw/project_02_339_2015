@@ -1,0 +1,100 @@
+
+
+body {
+  font-family: 'Playball', cursive;
+  background-color: #f2e4c2;
+  padding: 2rem;
+
+}
+
+nav p{
+  font-family: 'Lato', sans-serif;
+}
+section {
+  font-family: 'Lato', sans-serif;
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 1px solid #333;
+
+}
+
+section h3 {
+  color:#f37a59;
+
+
+}
+section p {
+  margin-top: 0;
+}
+section code {
+  background-color: #EEE;
+  padding: 0.5em 0.75em;
+}
+
+a.button {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: #FFF;
+  background-color: #7bc699;
+  text-decoration: none;
+  -webkit-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+}
+a.button:hover, a.button:focus {
+  background-color: #19403c;
+}
+
+a.items{
+  font-family: 'Playball', cursive;
+  display:inline-block;
+  background-color:#f2e4c2; 
+  color:#19403c;
+  text-decoration:none;
+
+}
+a.items:hover, a.items:focus{
+
+  color:#7bc699;
+}
+
+a.logo{
+  padding: 100px;
+  display: inline-block;
+  background-image: url("logo.png");
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  font-family: 'Playball', cursive;
+  color:#f37a59;
+  text-decoration:none;
+}
+
+
+
+ul{
+        padding: 0;
+        list-style: none;
+    }
+    ul li{
+        float: left;
+        width: 100px;
+        text-align: center;
+        line-height: 21px;
+    }
+    ul li a{
+        display: block;
+        padding: 5px 10px;
+        color: #333;
+        background: #7bc699;
+        text-decoration: none;
+    }
+    ul li a:hover{
+        color: #FFF;
+        background: #f37a59;
+    }
+    ul li ul{
+        display: none;
+    }
+    ul li:hover ul{
+        display: block; /* display the dropdown */
+    }
