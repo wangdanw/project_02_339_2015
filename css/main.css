@@ -10,7 +10,18 @@ nav a, nav a:visited {
 	width: 100%;
 }
 
-
+a.logo{
+  padding: 10px;
+  display: inline-block;
+  background-image: url("logo.png");
+  background-size: 75px, 75px;
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 75px;
+  font-family: 'Playball', cursive;
+  color:#f37a59;
+  text-decoration:none;
+}
 
 .hide{
 	visibility: hidden;
