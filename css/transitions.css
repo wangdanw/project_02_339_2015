@@ -1,0 +1,74 @@
+
+
+.dd-button{
+	transition: background-color 2s ease-out;
+}
+
+.dd-list{
+	position: absolute;/*only shows up while mouse hover up on the dd bottom*/
+	transition:
+	visibility 0s linear 0.5s,
+	opacity: 0.9s ease-out;
+}
+
+.hide{
+	visibility: hidden;
+	opacity: 0;
+
+}
+
+.dd:hover>.dd-list{
+	visibility: visible;
+	opacity: 1;
+	transition-delay: 0s;
+
+}
+/* Some default styling for the tutorial */
+body {
+	font-family: Arial, sans-serif;
+}
+
+a:hover {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.dd {
+	position: relative;
+	max-width: 20em;
+}
+
+.dd-list {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+/* Just giving our drop-down items some styling */
+.dd-list li a {
+	display: block;
+	width: 100%;
+	margin: 0.1em 0;
+	padding: 0.5em 0.7em;
+	background-color: yellow;
+	list-style-type: none;
+}
+
+.dd-button {
+
+	display: block;
+	color: white;
+	background-color: orange;
+	padding: 0.5em 0.7em;
+	text-decoration: none;
+}
+
+.dd-button:hover {
+	background-color: #CCC;
+}
+
+*, *::after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}

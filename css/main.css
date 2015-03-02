@@ -12,6 +12,12 @@ nav a, nav a:visited {
 
 
 
+.hide{
+	visibility: hidden;
+	opacity: 0;
+
+}
+
 nav a:hover, nav a:active, nav a:focus {
 	background-color: gray;
 	color: white;
@@ -22,6 +28,27 @@ nav a.logo {
 	background-color: white;
 	color: black;
 }
+
+.heading{
+	height:2em;
+}
+
+.product{
+	height: 8em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%
+	background-color: gray;
+}
+
+
+.heading img{
+	margin-right: 20px;
+	float: right;
+	height: 2em;
+	width: auto;
+}
+
 
 #rectangle{
 	position:relative;
@@ -83,11 +110,6 @@ nav a.logo {
 
 
 
-.footer{
-	
-	position:fixed;
-	height: 80px;
-}
 
 
 
@@ -192,4 +214,8 @@ h6{
 	bottom:0;
 	left:0; 
 	text-align: center;
+}
+
+#footer  p{
+	font-size: 0.7em;
 }
