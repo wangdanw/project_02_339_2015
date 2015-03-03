@@ -29,11 +29,11 @@ a.logofont{
 a.logo{
   padding: 10px;
   display: inline-block;
-  background-image: url("logo.png");
-  background-size: 75px, 75px;
+  background-image: url("logo2.png");
+  background-size: 200px, 100px;
   background-repeat: no-repeat;
-  width: 75px;
-  height: 75px;
+  width: 200px;
+  height: 100px;
   font-family: 'Playball', cursive;
   color:#f37a59;
   text-decoration:none;
