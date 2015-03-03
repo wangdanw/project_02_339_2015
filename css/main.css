@@ -75,29 +75,40 @@ nav a.logo {
 
 
 #rectangle p{
-	display: block;
 	float: right;
+	margin-left: 65%;
+	
 	color:black;
-	margin-right: 70px;
-	margin-left: 680px;
+	
 }
 
 #rectangle h2{
 
 	float: right;
-	margin-right: 200px;
-	margin-top: 200px;
+	margin-right: 15%;
+	margin-top: 100px;
 	color:black;
 
 }
 
-#rectangle a{
-
+#rectangle ul{
+	list-style-type: none;
 	float: right;
-	margin-right: 200px;
+	margin-right: 10%;
 	color:black;
 
 }
+
+#rectangle li {
+	margin-top: 1em;
+
+}
+#rectangle a:link{
+	text-decoration: none;
+	color:#19403c;
+}
+
+
 
 .viewmore{
 	margin-bottom:10px;
