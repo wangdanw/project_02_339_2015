@@ -1,5 +1,10 @@
 /*main*/
-nav a, nav a:visited {
+body {
+  font-family: 'Lato', sans-serif;
+  padding: 2rem;
+
+}nav a, nav a:visited {
+
 	display: inline-block;
 	color: #000000;
 	padding: 1em 1.25em;
@@ -10,6 +15,16 @@ nav a, nav a:visited {
 	width: 100%;
 }
 
+
+a.logofont{
+	font-family: 'Playball', cursive;
+  	padding: 0;
+  	display: inline-block;
+	font-size: 2em;
+	position:relative;
+	color:#000;
+ 	text-decoration:none;
+}
 
 a.logo{
   padding: 10px;
@@ -25,15 +40,38 @@ a.logo{
 }
 
 nav a:hover, nav a:active, nav a:focus {
-	background-color: gray;
+	background-color: #7bc699;
 	color: white;
 }
 
-
-nav a.logo {
-	background-color: white;
-	color: black;
+nav a.whitespace{
+	
+	background-color:white;
 }
+
+
+nav ul{
+		margin-top:0;
+        list-style: none;
+        margin-left:0;
+  
+    }
+
+
+nav ul li a {
+	display: block;
+}
+ nav ul li ul{
+        display: none;
+
+     
+    }
+ nav ul li:hover ul{
+ 		margin-left:0;
+        float:left;
+        display: block; /* display the dropdown */
+       
+    }
 
 .heading{
 	height:2em;
@@ -54,8 +92,6 @@ nav a.logo {
 	height: 2em;
 	width: auto;
 }
-
-
 
 
 #rectangle{
@@ -257,12 +293,6 @@ nav a.logo {
 }
 
 
-
-
-
-
-
-
 .box1{
 	
 	
@@ -402,3 +432,4 @@ h6{
 #footer  p{
 	font-size: 0.7em;
 }
+
