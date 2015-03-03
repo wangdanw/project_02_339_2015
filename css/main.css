@@ -55,12 +55,7 @@ nav a.logo {
 	width: auto;
 }
 
-.cake>.product{
-	visibility: visible;
-	opacity: 1;
-	transition-delay: 0s;
 
-}
 
 
 #rectangle{
@@ -124,6 +119,148 @@ nav a.logo {
 .buynow{
 	margin-bottom:20px;
 }
+
+
+@media (max-width: 40em){
+
+#rectangle{
+	position:relative;
+	float: center;
+	background-image: url("maccake.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height:33em;
+	margin: 1em 6em;
+}
+
+.content{
+	position: relative;
+	height: 33em;
+	width: 100%;
+	float: left;
+	margin-top: 22em;
+}
+
+
+.content p{
+	float: left;
+	color:black;
+	margin-top: 1%;
+	
+}
+
+.content  h2{
+
+	float: left;
+	margin-top: 15%;
+	color:black;
+
+}
+
+.content ul{
+	list-style-type: none;
+	float: right;
+	color:black;
+	margin-top: -32em;
+	margin-right: -5em;
+
+}
+
+.content li {
+	margin-top: 1em;
+
+}
+.content a:link{
+	text-decoration: none;
+	color:#19403c;
+}
+
+
+
+.viewmore{
+	margin-bottom:10px;
+}
+.buynow{
+	margin-bottom:20px;
+}
+
+
+}
+
+
+@media (max-width: 30em){
+	nav{
+		display: none;
+	}
+#rectangle{
+	position:relative;
+	float: center;
+	background-image: url("maccake.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height:33em;
+	margin: 1em 6em;
+}
+
+.content{
+	position: relative;
+	height: 33em;
+	width: 100%;
+	float: left;
+	margin-top: 13em;
+}
+
+
+.content p{
+	float: left;
+	color:black;
+	margin-top: 1%;
+	
+}
+
+.content  h2{
+
+	float: left;
+	margin-top: 15%;
+	color:black;
+
+}
+
+.content ul{
+	list-style-type: none;
+	float: right;
+	color:black;
+	margin-top: -32em;
+	margin-right: -5em;
+
+}
+
+.content li {
+	margin-top: 1em;
+
+}
+.content a:link{
+	text-decoration: none;
+	color:#19403c;
+}
+
+
+
+.viewmore{
+	margin-bottom:10px;
+}
+.buynow{
+	margin-bottom:20px;
+}
+
+}
+
+
+
+
+
+
+
 
 .box1{
 	
