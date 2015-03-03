@@ -73,37 +73,45 @@ nav a.logo {
 	margin: 1em;
 }
 
-
-#rectangle p{
+.content{
+	position: relative;
+	height: 33em;
+	width: 35%;
 	float: right;
-	margin-left: 65%;
+	margin-right: 3%;
+}
+
+
+.content p{
+	float: left;
+
 	
 	color:black;
 	
 }
 
-#rectangle h2{
+.content  h2{
 
-	float: right;
-	margin-right: 15%;
-	margin-top: 100px;
+	float: left;
+	
+	margin-top: 70px;
 	color:black;
 
 }
 
-#rectangle ul{
+.content ul{
 	list-style-type: none;
 	float: right;
-	margin-right: 10%;
+	
 	color:black;
 
 }
 
-#rectangle li {
+.content li {
 	margin-top: 1em;
 
 }
-#rectangle a:link{
+.content a:link{
 	text-decoration: none;
 	color:#19403c;
 }
