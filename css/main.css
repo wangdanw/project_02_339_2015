@@ -219,8 +219,8 @@ nav a.logo {
 }
 
 .content  h2{
-
-	float: left;
+	margin-left: 10%;
+	float: center;
 	margin-top: 15%;
 	color:black;
 
@@ -228,10 +228,11 @@ nav a.logo {
 
 .content ul{
 	list-style-type: none;
-	float: right;
+	float: center;
 	color:black;
-	margin-top: -32em;
-	margin-right: -5em;
+	margin-top: 10em;
+	
+	
 
 }
 
