@@ -16,6 +16,17 @@ body {
 }
 
 
+a {
+	font-family: 'Lato', sans-serif;
+	text-decoration:none;
+	color: #000 ;
+}
+
+a:hover{
+	font-weight:bold;
+}
+
+
 a.logofont{
 	font-family: 'Playball', cursive;
   	padding: 0;
@@ -49,32 +60,37 @@ nav a.whitespace{
 	background-color:white;
 }
 
-
 nav ul{
-		margin-top:0px;
-        list-style: none;
-        margin-left:-40px;
-  
-    }
-
-
-nav ul li a {
-	display: block;
+	list-style-type: none;
 }
- nav ul li ul{
-        display: none;
 
-     
-    }
- nav ul li:hover ul{
- 		position:relative;
- 		text-align: left;
-        float:left;
-        display: block; /* display the dropdown */
+.dd-hidden {
+	visibility: none;
+	position: absolute;
+	opacity: 0;
+}
+
+.dd-shown {
+	visibility: visible;
+	opacity: 1;
+}
 
 
-       
-    }
+.down{
+	background-color:#7bc699;
+	width: 400%;
+	height: auto;
+	margin-left: -200px;
+
+}
+
+
+.down ul{
+	line-height: 1em;
+	line-height: 2;
+	
+	
+}
 
 .heading{
 	height:2em;
@@ -99,114 +115,41 @@ nav ul li a {
 
 #rectangle{
 	position:relative;
-	float: center;
-	background-image: url("maccake.jpg");
-	background-size: 70%;
-	background-repeat: no-repeat;
 	height:33em;
 	margin: 1em;
 }
-
-.content{
-	position: relative;
-	height: 33em;
-	width: 35%;
-	float: right;
-	margin-right: 3%;
-}
-
-
-.content p{
-	float: left;
-
-	
-	color:black;
-	
-}
-
-.content  h2{
-
-	float: left;
-	
-	margin-top: 70px;
-	color:black;
-
-}
-
-.content ul{
-	list-style-type: none;
-	float: right;
-	
-	color:black;
-
-}
-
-.content li {
-	margin-top: 1em;
-
-}
-.content a:link{
-	text-decoration: none;
-	color:#19403c;
-}
-
-
-
-.viewmore{
-	margin-bottom:10px;
-}
-.buynow{
-	margin-bottom:20px;
-}
-
-
-@media (max-width: 40em){
-
-#rectangle{
-	position:relative;
-	float: center;
-	background-image: url("maccake.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	height:33em;
-	margin: 1em 10%;
-}
-
-.content{
-	position: relative;
-	height: 33em;
+#rectangle img{
 	width: 100%;
+	height:auto;
+}
+
+.content{
+	position: relative;
 	float: left;
-	margin-top: 22em;
 }
 
 
 .content p{
-	float: left;
-	color:black;
-	margin-top: 1%;
-	
+	line-height: 2;
+	text-align: left;
+
 }
 
 .content  h2{
-
-	float: left;
-	margin-top: 15%;
-	color:black;
+text-align: left;
+max-width: 60%;
 
 }
 
 .content ul{
-	list-style-type: none;
 	float: right;
-	color:black;
-	margin-top: -32em;
-	margin-right: -5em;
-
+list-style-type: none;
 }
 
 .content li {
-	margin-top: 1em;
+
+text-align: left;
+margin-top: 1em;
 
 }
 .content a:link{
@@ -221,64 +164,47 @@ nav ul li a {
 }
 .buynow{
 	margin-bottom:20px;
-}
-
-
 }
 
 
 @media (max-width: 30em){
-	nav{
-		display: none;
-	}
 #rectangle{
 	position:relative;
-	float: center;
-	background-image: url("maccake.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;
 	height:33em;
-	margin: 1em 15%;
+	margin: 1em;
+}
+#rectangle img{
+	width: 100%;
+	height:auto;
 }
 
 .content{
 	position: relative;
-	height: 33em;
-	width: 100%;
 	float: left;
-	margin-top: 13em;
 }
 
 
 .content p{
-	float: left;
-	color:black;
-	margin-top: 1%;
-	
+	line-height: 2;
+	text-align: left;
 }
 
 .content  h2{
-	margin-left: 10%;
-	float: center;
-	margin-top: 15%;
-	color:black;
+text-align: left;
+max-width: 60%;
 
 }
 
 .content ul{
+	
 	list-style-type: none;
-	float: center;
-	color:black;
-	margin-top: 8em;
-	
-	
-
+	float: right;
 }
 
 .content li {
-	margin-top: 0.4em;
-	display: inline;
-	margin-left: 1em;
+
+text-align: left;
+margin-top: 1em;
 
 }
 .content a:link{
@@ -294,12 +220,124 @@ nav ul li a {
 .buynow{
 	margin-bottom:20px;
 }
+}
+
+
+
+@media (max-width: 30em){
+	#rectangle{
+	position:relative;
+	height:33em;
+	margin: 1em;
+}
+#rectangle img{
+	width: 100%;
+	height:auto;
+}
+
+.content{
+	position: relative;
+	float: left;
+}
+
+
+.content p{
+	line-height: 2;
+	text-align: left;
+}
+
+.content  h2{
+text-align: left;
+max-width: 60%;
+
+}
+
+.content ul{
+
+
+	float: right;
+}
+
+.content li {
+
+text-align: left;
+margin-top: 1em;
+
+}
+.content a:link{
+	text-decoration: none;
+	color:#19403c;
+}
+
+
+
+.viewmore{
+	margin-bottom:10px;
+}
+.buynow{
+	margin-bottom:20px;
+}
+	nav{
+		display: none;
+	}
 
 a.logo{
 	display: none;
 }
 
 }
+
+
+
+.filter {
+	height: 10000000000px;
+}
+.filter ul {
+	list-style-type: none;
+}
+
+.filter ul li {
+
+	text-align: left;
+}
+
+.item img{
+	
+	margin-top: 1em;
+	padding: 1.5em;
+	width: 100%;
+	height: auto;
+	
+}
+.like img{
+	margin-top: -100%;
+	margin-left:10%; 
+	position: absolute;
+	width: 80px;
+	height: auto;
+
+
+	
+}
+.add img{
+	margin-top: -105.6%;
+	margin-left:22%; 
+	position: absolute;
+	width: 80px;
+	height: auto;
+
+
+	
+}
+.item{
+	position: relative;
+}
+
+
+
+
+
+
 
 
 .box1{
@@ -418,23 +456,16 @@ h6{
 
 
 #wrapper {
+	clear: both;
 	min-height:100%;
 	position:relative;
 }
-#header {
-	padding:10px;
 
-}
-#content {
-	padding:10px;
-	padding-bottom:60px;   /* Height of the footer element */
-}
 #footer {
 	width:100%;
 	height:80px;
 	position:absolute;
-	bottom:0;
-	left:0; 
+	padding-bottom: 10px;
 	text-align: center;
 }
 
