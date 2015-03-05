@@ -57,6 +57,29 @@ nav ul{
 }
 
 
+
+.cakeingredient img{
+ max-width: 60%;
+ margin-top: 3em;
+ margin-left:-6em; 
+
+  -ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+}
+
+
+
+.cakeingredient-p p{
+ max-width: 50%;
+ margin-top: 3em;
+ margin-left:-4em; 
+ line-height: 2;
+text-align: left;
+
+}
+
+
 .down{
 	background-color:rgba(123,198,153,0.4);
 	width: 400%;
@@ -432,7 +455,5 @@ max-width:80%;
     -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
     transform: rotate(7deg);
 }
-
-
 
 
