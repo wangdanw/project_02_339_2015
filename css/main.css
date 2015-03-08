@@ -5,7 +5,15 @@ body {
   font-family: 'Lato', sans-serif;
   padding: 2rem;
 
-}nav a, nav a:visited {
+}
+header{
+	font-family: 'Lato', sans-serif;
+	font-size: 0.5rem;
+  	padding: 2rem;
+	margin-top: -2rem;
+
+}
+nav a, nav a:visited {
 
 	display: inline-block;
 	color: #000000;
@@ -16,9 +24,9 @@ body {
 	transition: background-color 0.5s;
 	width: 100%;
 }
-header{
-	margin-top: -30px;
-
+nav{
+	background-color:#b2dfb0;
+	height: 2.3rem;
 }
 
 a {
@@ -26,8 +34,18 @@ a {
 	text-decoration:none;
 	color: #000 ;
 }
+a.logo{
 
-a:hover{
+  background-image: url("logo.png");
+  background-size: 75px, 75px;
+  background-repeat: no-repeat;
+  width: 75px;
+  height: 75px;
+  margin-top:-1rem;
+
+}
+
+/*a:hover{
 	font-weight:bold;
 }
 
@@ -59,6 +77,73 @@ nav ul{
 	opacity: 1;
 }
 
+*/
+nav a:hover, nav a:active, nav a:focus {
+	background-color: #7bc699;
+	color: white;
+}
+nav .nohover a:hover, nav a:active, nav a:focus {
+	background-color:none;
+}
+
+/*
+nav a.whitespace{
+	
+	background-color:white;
+}*/
+
+
+nav ul{
+		margin-top:0;
+        list-style: none;
+        margin-left:0;
+        width:10em;
+  	
+    }
+
+.catagory-button{
+	transition:background-color 0.5s ease-out;
+}
+.catagory-list{
+
+	width:100%;
+	z-index:1000;
+	position: absolute;/*只有主菜单菜会有下拉*/
+	transition: 
+		visibility 0s linear 0.5s,
+		opcaity 0.9s ease-out; /*它先作ddbutton的trasition然后才做这个的 */
+}
+
+.catagory:hover>.catagory-list { /*one div only */
+	visibility: visible;
+	opacity: 1;
+	/*position abosulote will result in none show*/
+	transition-delay: 0s; /*下拉菜单不delay了但是transition的样式变化还是delay的*/
+}
+*, *::after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*
+nav .catagory a{
+
+	display: block;
+
+}
+ nav .catagory ul li {
+        display: none;
+ 
+    }
+ nav .catagory a:hover ul{
+ 		margin-left:0;
+        float:left;
+        display: block;
+        position:absolute;
+        z-index:1000;
+        	
+       
+    }*/
 
 
 .cakeingredient img{
