@@ -99,8 +99,8 @@ text-align: left;
 	
 }
 .about-img img{
-max-width: 70%;
-margin-top:10%;
+max-width: 60%;
+margin-top:5%;
   -ms-transform: rotate(-7deg); /* IE 9 */
     -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
     transform: rotate(-7deg);
@@ -396,6 +396,14 @@ margin-top: 1em;
 }
 
 
+.detial img{
+	width: 100%;
+}
+
+
+
+
+
 
 
 
@@ -523,15 +531,15 @@ max-width:80%;
 }
 
 .grids figure h2 {
-	font-size: 1em;
+	font-size: 0.8em;
 	word-spacing: -0.15em;
 	font-weight: 100;
 	text-align: bottom;
 }
 
 .grids figure h2 span {
-	font-weight: 400;
-	font-size: 1em;
+	font-weight: 600;
+	font-size: 0.8em;
 	
 }
 
@@ -547,17 +555,17 @@ max-width:80%;
 }
 /*need to change @media*/
 .icon-like{
-	width:100%;height:auto;margin-top:-40%;margin-left:-20%;
+	width:80%;height:auto;margin-top:-30%;margin-right:-20%;
 
 }
 .icon-like-click{
-	width:100%;height:auto;margin-top:-100%;margin-left:-20%;
+	width:80%;height:auto;margin-top:-80%;margin-right:-20%;
 
 }
 
 
 .icon-add{
-	width:100%;height:auto;margin-top:-40%;margin-left:-40%;
+	width:80%;height:auto;margin-top:-30%;margin-left:-10%;
 }
 
 figure.effect-zoe figcaption {
@@ -600,12 +608,12 @@ figure.effect-zoe:hover div.icon-links a:focus {
 
 figure.effect-zoe p.description {
 	position: absolute;
-	bottom: 7.5em;
-	max-width: 60%;
+	bottom: 10em;
+	max-width: 80%;
 	
 	color: #fff;
 	text-transform: none;
-	font-size: 0.5em;
+	font-size: 0.6em;
 	opacity: 0;
 	
 	-webkit-transition: opacity 0.35s;
