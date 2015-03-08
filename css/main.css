@@ -4,6 +4,7 @@
 body {
   font-family: 'Lato', sans-serif;
   padding: 2rem;
+  background-image:url('BG.jpg');
 
 }
 header{
@@ -16,7 +17,7 @@ header{
 nav a, nav a:visited {
 
 	display: inline-block;
-	color: #000000;
+	color: white;
 	padding: 1em;
 	font-size: 1em;
 	text-decoration: none;
@@ -27,13 +28,10 @@ nav a, nav a:visited {
 nav{
 	background-color:#b2dfb0;
 	height: 2.3rem;
+	color:#000;
 }
 
-a {
-	font-family: 'Lato', sans-serif;
-	text-decoration:none;
-	color: #000 ;
-}
+
 a.logo{
 
   background-image: url("logo.png");
@@ -78,12 +76,13 @@ nav ul{
 }
 
 */
+
 nav a:hover, nav a:active, nav a:focus {
 	background-color: #7bc699;
-	color: white;
 }
-nav .nohover a:hover, nav a:active, nav a:focus {
-	background-color:none;
+nav .nohover a:hover, nav .nohover a:active, nav .nohover a:focus {
+	background-color:transparent;
+
 }
 
 /*
@@ -100,13 +99,20 @@ nav ul{
         width:10em;
   	
     }
-
+.catagory{
+	position:relative;
+	max-width:col-2of10;
+}
 .catagory-button{
 	transition:background-color 0.5s ease-out;
 }
 .catagory-list{
-
+	display:block;
 	width:100%;
+	margin:0em;
+	padding:0em;
+	background-color:rgba(178,223,176,0.8);
+	text-decoration: none;
 	z-index:1000;
 	position: absolute;/*只有主菜单菜会有下拉*/
 	transition: 
