@@ -38,11 +38,11 @@ nav{
 a.logo{
 
   background-image: url("logo.png");
-  background-size: 75px, 75px;
+  background-size: 85px, 85px;
   background-repeat: no-repeat;
-  width: 75px;
-  height: 75px;
-  margin-top:-1rem;
+  width: 85px;
+  height: 85px;
+  margin-top:-1.5rem;
 
 }
 
