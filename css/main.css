@@ -580,6 +580,105 @@ max-width:80%;
 }
 
 
+.detailimagel{
+padding-left: 2em;
+}
+.detailimagel img{
+
+	width: 100%;
+	height: auto;
+	
+}
+.detailimagel h2{
+	float: left;
+	font-size: 1em;
+}
+.detailimagel h5{
+	margin-top: -0.8em;
+	float: left;
+	font-size: 0.8em;
+	font-weight: 500;
+
+}
+.detailimages img{
+
+	width: 100%;
+	height: auto;
+	padding:2em;
+	padding-top: 0;
+}
+
+.detailcontent p{
+	font-size: 0.9em;
+	line-height: 1.3em;
+}
+
+
+
+.btn {
+	float: right;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 1em;
+  margin-top: -4em;
+  text-transform: uppercase;
+}
+.btn-default {
+  border: 0;
+  background: #648880;
+  padding: 5px 30px;
+  font-size: 14px;
+}
+.btn-default:hover {
+  background: #77a198;
+}
+
+form {
+  margin-bottom: 22px;
+  
+
+}
+.register-group{
+	border: none;
+	background-color: rgba(123,198,153,0.2);
+}
+input,
+select,
+textarea {
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.register-group label {
+  color: #648880;
+  cursor: pointer;
+  font-weight: 400;
+  float: left;
+}
+.register-group input,
+.register-group select,
+.register-group textarea {
+  border: 1px solid #c6c9cc;
+  border-radius: 5px;
+  color: #888;
+  display: block;
+  margin: 5px 1em 27px 1em;
+  padding: 5px 8px;
+}
+.register-group input,
+.register-group textarea {
+  width: 100%;
+}
+.register-group select {
+  height: 34px;
+  width: 60px;
+}
+.register-group textarea {
+  height: 78px;
+}
+
 
 /*item effect*/
 
