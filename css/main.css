@@ -5,7 +5,7 @@ body {
   font-family: 'Lato', sans-serif;
   padding: 2rem;
   background-image:url('BG.jpg');
-
+  color: #7d7d7d;
 }
 header{
 	font-family: 'Lato', sans-serif;
@@ -31,6 +31,7 @@ nav{
 	background-color:#b2dfb0;
 	color:#000;
 	height:2.3rem;
+
 
 }
 
@@ -438,19 +439,31 @@ margin-top: 1em;
 
 
 .filter {
-	margin-top: 10%;
-	height: 10000000000px;
+
+	margin-left:2rem;
+	max-width:70%;
+	margin-top: 2.5rem;
+	color: #7d7d7d;
+	font-family: 'Lato', sans-serif;
+	font-size:0.9rem;
+}
+.filter-list{
+	font-size:0.6rem;
+}
+.filter-name{
+	font-size:0.7rem;
 }
 .filter ul {
 	list-style-type: none;
-	line-height: 2;
 }
 
 .filter ul li {
 
 	text-align: left;
 }
-.item{
+
+
+/*.item{
 	position: relative;
 }
 .item img{
@@ -460,7 +473,7 @@ margin-top: 1em;
 	width: 100%;
 	height: auto;
 	
-}
+}*/
 .like img{
 	position: absolute;
 	bottom: -4%;
@@ -535,6 +548,7 @@ h6{
 	position:absolute;
 	padding-bottom: 10px;
 	text-align: center;
+	color: #7d7d7d;
 }
 
 #footer  p{
@@ -567,9 +581,10 @@ max-width:80%;
 /*item effect*/
 
 .grids {
+	margin-right:2rem;
 	position: relative;
 	clear: both;
-	margin: 0 auto;
+
 	padding: 1em 0 4em;
 	max-width: 1000px;
 	list-style: none;
@@ -665,6 +680,7 @@ max-width:80%;
 figure.effect-zoe figcaption {
 	top: auto;
 	bottom: 0;
+
 	padding: 1em;
 	height: 3.75em;
 	background: #fff;
