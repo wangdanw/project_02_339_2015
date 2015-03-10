@@ -1,15 +1,40 @@
 
-
-body {
-  font-family: 'Playball', cursive;
-  background-color: #f2e4c2;
+  body {
+ font-family: 'Lato', sans-serif;
   padding: 2rem;
-
+  background-image:url('BG.jpg');
+  color: #7d7d7d;
 }
+nav a, nav a:visited {
 
-nav p{
+  display: inline-block;
+  color: white;
+  padding: 1em;
+  font-size: 1.5em;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  width: 100%;
+}
+nav{
   font-family: 'Lato', sans-serif;
+  font-size:0.5rem;
+  display: block;
+  background-color:#b2dfb0;
+  color:#000;
+  height:2.3rem;
 }
+nav a:hover, nav a:active, nav a:focus {
+  background-color: #7bc699;
+}
+nav .nohover a:hover, nav .nohover a:active, nav .nohover a:focus {
+  background-color:transparent;
+
+}
+a:visited{
+  color:#7d7d7d;
+}
+
 section {
   font-family: 'Lato', sans-serif;
   margin: 1em 0;
@@ -19,12 +44,12 @@ section {
 }
 
 section h3 {
-  color:#f37a59;
-
+  color:#7bc699;
 
 }
 section p {
   margin-top: 0;
+  color:#7d7d7d;
 }
 section code {
   background-color: #EEE;
@@ -35,21 +60,24 @@ a.button {
   display: inline-block;
   padding: 0.5em 0.75em;
   color: #FFF;
-  background-color: #7bc699;
+  background-color: #b2dfb0;
   text-decoration: none;
   -webkit-transition: background-color 0.25s ease-out;
   transition: background-color 0.25s ease-out;
 }
 a.button:hover, a.button:focus {
-  background-color: #19403c;
+  background-color: #7bc699;
 }
 
 a.items{
   font-family: 'Playball', cursive;
   display:inline-block;
-  background-color:#f2e4c2; 
-  color:#19403c;
+  padding-left:1em;
+  color:#FFF;
+  padding-right:1em;
+  background-color:#b2dfb0;
   text-decoration:none;
+  font-size:1.5rem;
 
 }
 a.items:hover, a.items:focus{
@@ -70,31 +98,3 @@ a.logo{
 }
 
 
-
-ul{
-        padding: 0;
-        list-style: none;
-    }
-    ul li{
-        float: left;
-        width: 100px;
-        text-align: center;
-        line-height: 21px;
-    }
-    ul li a{
-        display: block;
-        padding: 5px 10px;
-        color: #333;
-        background: #7bc699;
-        text-decoration: none;
-    }
-    ul li a:hover{
-        color: #FFF;
-        background: #f37a59;
-    }
-    ul li ul{
-        display: none;
-    }
-    ul li:hover ul{
-        display: block; /* display the dropdown */
-    }
