@@ -33,8 +33,15 @@
 	width:33.333%;
 }
 
-
-
+.col-1of4{
+	width:25%;
+}
+.col-1of5{
+	width:20%;
+}
+.col-1of6{
+	width:17.5%;
+}
 
 
 @media (max-width: 40em){

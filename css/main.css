@@ -172,12 +172,16 @@ nav .catagory a{
  margin-top: 3em;
  margin-left:-6em; 
 
+
   -ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
     transform: rotate(7deg);
 }
 
-
+.fondantweb img{
+	padding-top:2em;
+	width:100%;
+	height:relative;}
 
 .cakeingredient-p p{
  max-width: 50%;
@@ -1436,6 +1440,15 @@ form.go-right input:focus + label.same{
   padding-top: 5px;
 }
 
+input{
+	border:0;
+	border:none;
+	outline:none;
+}
 
-
+.checkoutbody input{
+	border:0;
+	border:none;
+	outline:none;
+}
 
