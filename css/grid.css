@@ -44,7 +44,7 @@
 }
 
 
-@media (max-width: 40em){
+@media (max-width: 42em){
 	.col-5of10{
 		width:100%;
 	}
@@ -62,6 +62,13 @@
 .col-1of3{
 	width:100%;
 }
+	.col-2of10{
+		width: 100%;
+	}
+.col-1of4{
+		width: 50%;
+	}
+
 
 }
 

@@ -13,6 +13,8 @@ header{
   	padding: 2rem;
 	margin-top: -2rem;
 
+}.smalllogo{
+	display: none;
 }
 nav a, nav a:visited {
 
@@ -231,15 +233,15 @@ margin-top:5%;
 .search img{
 	position: absolute;
 	right: 6%;
-	top: 0;
-	height: 2em;
+	top: 1%;
+	height: 3em;
 	width: auto;
 }
 .shopping-cart img{
 	position: absolute;
 	right: 10%;
-	top: 0;
-	height: 2em;
+	top: 1%;
+	height: 3em;
 	width: auto;
 }
 
@@ -587,7 +589,10 @@ textarea {
 	padding:2em;
 	margin-left:0em;
 }
-
+.shoppingcart input{
+	color: #7d7d7d;
+	background-color: rgba(123,198,153,0.);
+}
 .iteminfo input{
 	border: none;
 
@@ -1323,7 +1328,11 @@ form.go-right input:focus + label.same{
 
 
 
-.backupnav {
+.main-menu {
+	display: none;
+}
+
+.main-menu1 {
 	display: none;
 }
 
@@ -1459,32 +1468,317 @@ margin-top: 1em;
 }
 
 
-.backupnav {
+
+
+
+.icon{width: 80%;height: auto;}
+.icon1{width: 70%;height: auto;margin-left: 3px;}
+.icon2{width: 63%;height: auto;margin-left: 6px;}
+.icon3{width: 90%;height: auto;margin-left: 0px;}
+.icon4{width: 80%;height: auto;margin-left: 3px;}
+
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:150px;
+overflow:visible;
+}
+
+.main-menu {
+display: inline;
+background:rgba(178,223,176,0.5);
+
+position:fixed;
+top:25%;
+bottom:0;
+height:45%;
+left:0;
+width:30px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:150px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:20px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+width:60%;
+background-color: rgba(123,198,153,0.5);
+}
+
+.catagory{
+	position:relative;
+	
+}
+.catagory-button{
+	transition:background-color 0.5s ease-out;
+}
+.catagory-list{
 	display:block;
-
-}
-
-.backupnav img{
-	width: 10%;
-	position:fixed;
-	padding:0;
-	margin-left: -50px;
-	z-index: 10000;
-}
-
-.backup{
-	top: 16%;
-	left: 3em;
-	position:fixed;
-	z-index: 10000;}
-
-
-.backup h3{
-	font-size: 1.4em;
+	width:60%;
+	margin-top:-4em;
+	margin-left:10em;
+	padding:0em;
+	background-color:rgba(178,223,176,0.5);
 	text-decoration: none;
-	}
+	z-index:1000;
+	position: absolute;/*只有主菜单菜会有下拉*/
+	transition: 
+		visibility 0s linear 0.5s,
+		opcaity 0.9s ease-out; /*它先作ddbutton的trasition然后才做这个的 */
+}
+
+.catagory:hover>.catagory-list { /*one div only */
+	visibility: visible;
+	opacity: 1;
+	/*position abosulote will result in none show*/
+	transition-delay: 0s; /*下拉菜单不delay了但是transition的样式变化还是delay的*/
+}
+*, *::after, *::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.search,.shopping-cart{
+	display: none;
+}
+
+.catagory: a:visited{
+	color:rgba(178,223,176,0.7);
+}
+
+.smalllogo{
+	display: inline;
+	padding: 0;
+	position: absolute;
+	top: 5px;
+	left: 40%;
+}
+
+.smalllogo img{
+	width: 75%
+}
+
+#rectangle{margin-top: 35px;}
 
 
 
 
+.main-menu1:hover,nav.main-menu1.expanded {
+width:150px;
+overflow:visible;
+}
 
+.main-menu1 {
+display: inline;
+background:rgba(178,223,176,0.5);
+
+position:fixed;
+top:10%;
+bottom:0;
+height:50%;
+left:0;
+width:30px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+.main-menu1>ul {
+margin:7px 0;
+}
+
+.main-menu1 li {
+position:relative;
+display:block;
+width:150px;
+}
+
+.main-menu1 li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu1 .nav-icon {
+position:relative;
+display:table-cell;
+width:20px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu1 .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  
+}
+
+.main-menu1>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+
+.main-menu1 li:hover>a,nav.main-menu1 li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+width:60%;
+background-color: rgba(123,198,153,0.5);
+}
+
+
+
+.filter1 {
+
+	margin-left:7rem;
+	width:100%;
+	margin-top: -20rem;
+	color: #7d7d7d;
+	font-family: 'Lato', sans-serif;
+	font-size:0.9rem;
+	background-color: rgba(255,255,255,0.7);
+}
+.filter-list{
+	font-size:0.6rem;
+}
+.filter-name{
+	font-size:0.7rem;
+}
+.filter1 ul {
+	list-style-type: none;
+}
+
+.filter1 ul li {
+
+	text-align: left;
+}
